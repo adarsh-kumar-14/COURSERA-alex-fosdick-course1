@@ -9,95 +9,39 @@
  *
  *****************************************************************************/
 /**
- * @file stats.h 
- * @brief Header file for stats.c. Performs statistical analysis on a dataset.
+ * @file <Add File Name> 
+ * @brief <Add Brief Description Here >
  *
  * <Add Extended Description Here>
  *
- * @author vtotient
- * @date April 7, 2019
+ * @author <Add FirsName LastName>
+ * @date <Add date >
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
+/* Add Your Declarations and Function Comments here */ 
+void print_statistics(unsigned char *data, int length);
+void print_array(unsigned char *data, int length);
+unsigned char find_median(unsigned char *data, int length);
+unsigned char find_mean(unsigned char *data, int length);
+unsigned char find_maximum(unsigned char *data, int length);
+unsigned char find_minimum(unsigned char *data, int length);
+void sort_array(unsigned char *data, int length);
+
 /**
- * @brief A function that prints the statistics of an array including minimum, 
- * maximum, mean, and median.
+ * @brief <Add Brief Description of Function Here>
  *
- * @param array The array containing the dataset of unsigned chars
- * @param length The length of the array
+ * <Add Extended Description Here>
  *
- * @return NULL
+ * @param <Add InputName> <add description here>
+ * @param <Add InputName> <add description here>
+ * @param <Add InputName> <add description here>
+ * @param <Add InputName> <add description here>
+ *
+ * @return <Add Return Informaiton here>
  */
-void print_statistics(unsigned char array[], unsigned int length);
 
-
-/** 
- * @brief Given an array of data and a length, prints the array to the screen
- *
- * @param array An array of unsigned chars
- * @param length The length of the array
- *
- * @return NULL
- */
-void print_array(unsigned char array[], unsigned int length);
-
-
-/** 
- * @brief Given an array of data and a length, returns the median value
- *
- * @param array An array of unsigned chars
- * @param length The length of the array
- *
- * @return median The median of the array
- */
-unsigned char find_median(unsigned char array[], unsigned int length);
-
-
-/** 
- * @brief Given an array of data and a length, returns the min value
- *
- * @param array An array of unsigned chars
- * @param length The length of the array
- *
- * @return median The min of the array
- */
-unsigned char find_min(unsigned char array[], unsigned int length);
-
-
-/** 
- * @brief Given an array of data and a length, returns the max value
- *
- * @param array An array of unsigned chars
- * @param length The length of the array
- *
- * @return median The max of the array
- */
-unsigned char find_max(unsigned char array[], unsigned int length);
-
-
-/** 
- * @brief Given an array of data and a length, returns the mean value
- *
- * @param array An array of unsigned chars
- * @param length The length of the array
- *
- * @return median The mean of the array
- */
-unsigned char find_mean(unsigned char array[], unsigned int length);
-
-
-/** 
- * @brief Sorts the array using selection sort
- *
- * Selection sort is used despite its O(n^2) runtime because it has a 
- * spatial complexity of O(1) and that is more important in this 
- * embedded system context.
- *
- * @param array An array of unsigned chars
- * @param length The length of the array
- */
-void sort_array(unsigned char array[], unsigned int length);
 
 #endif /* __STATS_H__ */
