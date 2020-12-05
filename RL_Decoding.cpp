@@ -113,8 +113,6 @@ int main()
     else {
       cout << "Input File opening has failed."<<endl;
     }
-
-
     ifstream file("test_out_out.txt");
     if (file.is_open())
     {
