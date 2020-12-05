@@ -79,8 +79,7 @@ string RLD(node* head)
 	return res;
 }
 
-node* string_to_linkedList(string text, node* head)
-{
+node* string_to_linkedList(string text, node* head){
     head = add(text[0]);
     node* curr = head;
 
@@ -94,8 +93,7 @@ node* string_to_linkedList(string text, node* head)
 }
 
 // Driver code
-int main()
-{
+int main(){
     string text;
     ifstream filestream("test_out.txt");
     if (filestream.is_open())
